@@ -150,7 +150,7 @@ def holedepthchecker(holeid, header, rgblog, amplog):
             elif atvbottom is not None:
                 bottom_combo = atvbottom + 5
             if bottom_combo and bottom_combo < epiroc_depth and blocked_depth2 < bottom_combo:
-                print(f"{holeid} {Fore.YELLOW}{Style.BRIGHT}Epiroc depth discrepancy. Tool Bottom: {bottom_combo:.2f}m, Driller Depth: {epiroc_depth:.2f}m{Style.RESET_ALL}")
+                print(f"{holeid} {Fore.YELLOW}{Style.BRIGHT}Epiroc possible depth discrepancy. Tool Bottom: {bottom_combo:.2f}m, Driller Depth: {epiroc_depth:.2f}m{Style.RESET_ALL}")
     except Exception as e:
         print(f"Depth check (Epiroc) warning {holeid}: {e}")
 
