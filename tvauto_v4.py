@@ -705,7 +705,9 @@ def print_summary(
     missing_caliper_files = sorted(list(set(missing_caliper_accepted + missing_caliper_rejected)))
 
     print("\n################################################################")
-    print("------------------- COMPLETE. SUMMARY : -----------------------\n")
+    print("------------------- COMPLETE. SUMMARY : -----------------------")
+    print("---------------------------------------------------------------")
+
     print(f"Total files processed: {len(processed_files)}\n")
 
     if accepted_files:
