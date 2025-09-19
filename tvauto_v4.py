@@ -32,6 +32,7 @@ from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from colorama import init as colorama_init
 from colorama import Fore, Style
+from datetime import datetime
 colorama_init()
 
 # ------------------------------- SUPPORT / EXISTING FUNCTIONS -------------------------------
@@ -704,9 +705,9 @@ def print_summary(
     # Category 4: MISSING CALIPER files
     missing_caliper_files = sorted(list(set(missing_caliper_accepted + missing_caliper_rejected)))
 
-    print("\n################################################################")
-    print("------------------- COMPLETE. SUMMARY : -----------------------")
-    print("---------------------------------------------------------------")
+    print("\n##################################################################")
+    print("##### -------------- COMPLETE. SUMMARY : ------------------ #####")
+    print("##### -------------- Timestamp: " + str(datetime.now().strftime('%d-%m-%Y %H:%M')) + " ---------- #####\n")
 
     print(f"Total files processed: {len(processed_files)}\n")
 
